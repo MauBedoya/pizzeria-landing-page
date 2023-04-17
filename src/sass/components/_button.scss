@@ -1,0 +1,46 @@
+@use "../settings";
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--main-color);
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  transition: background .4s ease-in-out;
+}
+
+.button-transparent {
+  border: 1px solid var(--main-color);
+
+  & .icon {
+    width: 24px;
+    height: 24px;
+    background: url(https://res.cloudinary.com/dmpiwivwa/image/upload/v1681645820/pizzeria-landing-page-images/icons/main-clr-wap-icon_wp7stc.svg);
+  }
+  &:hover {
+    background: var(--main-color);
+    color: black;
+  }
+  
+  &:hover .icon {
+    background: url(https://res.cloudinary.com/dmpiwivwa/image/upload/v1681658381/pizzeria-landing-page-images/icons/black-clr-wap-icon_du28wy.svg);
+  }
+}
+
+.button-emphasis {
+  padding: 25px 20px;
+  background-color: var(--emphasis-color);
+  transition: all 0.3s ease;
+
+  &:hover {
+    letter-spacing: 3px;
+  }
+}

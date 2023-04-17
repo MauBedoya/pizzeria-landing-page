@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+  <link rel="stylesheet" href="./src/sass/main.scss">
+  <script defer src="./src/scripts/main.js"></script>
+  <title>The Pizzeria</title>
+</head>
+<body>
+  <div class="hero-background">
+    <!-- ToDo: revisar como usar el background de manera optima para desktop y mobile-->
+  </div>
+  <header class="main-header">
+    <div class="header-top">
+      <div class="icons-pack">
+        <a href=""><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1681644364/pizzeria-landing-page-images/icons/main-clr-fb-icon_nhajnh.svg" alt=""></a>
+        <a href=""><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1681644593/pizzeria-landing-page-images/icons/main-clr-ig-icon_pkaufp.svg" alt=""></a>
+        <a href=""><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1681644593/pizzeria-landing-page-images/icons/main-clr-mail-icon_isg0t1.svg" alt=""></a>
+      </div>
+      <div>
+        <h1 class="heading-main">The Pizzeria</h1>
+      </div>
+      <div>
+        <a href="" class="button button-transparent">
+          <span>Ordena Ahora!!</span>
+          <span class="icon"></span>
+        </a>
+      </div>
+    </div>
+    <!-- <button class="hamburger hamburger--spin" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button> -->
+  </header>
+  <nav class="nav-sticky">
+    <ul class="nav-list">
+      <li><a class="nav-item" href="#start">Inicio</a></li>
+      <li><a class="nav-item" href="#about-us">Nosotros</a></li>
+      <li><a class="nav-item" href="#menu">Menu</a></li>
+      <li><a class="nav-item" href="#find-us">Encuéntranos</a></li>
+      <li><a class="nav-item" href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="content-section hero" id="start">
+      <h1 class="heading-xxl">El Autentico Sabor a Pizza</h1>
+      <p class="heading-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, exercitationem ad itaque pariatur. dolor sit amet consectetur adipisicing elit.</p>
+      <a class="button button-emphasis" href="">Haz tu pedido!</a>
+      <!-- <svg class="foot-shape" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" ><path  d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill" fill="#F35858" fill-opacity="1"></path></svg> -->
+    </section>
+    <div class="asymmetric-bubble">
+      <img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1681674475/pizzeria-landing-page-images/images/floating-pizza_br1kvo.webp" alt="a pizza image">
+    </div>
+    <section class="content-section" id="about-us">
+      <div class="bubble-cards-layout">
+        <div class="bubble-card asymmetric-card">
+          <img src="https://source.unsplash.com/QbOvrpDU1KA" alt="">
+          <h2 class="heading-lg">Ingredientes Frescos</h2>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit neque, sint assumenda tenetur facere. Voluptatum unde necessitatibus.</p>
+        </div>
+        <div class="bubble-card asymmetric-card">
+          <img src="https://source.unsplash.com/QbOvrpDU1KA" alt="">
+          <h2 class="heading-lg">Ingredientes Frescos</h2>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit neque, sint assumenda tenetur facere. Voluptatum unde necessitatibus.</p>
+        </div>
+        <div class="bubble-card asymmetric-card">
+          <img src="https://source.unsplash.com/QbOvrpDU1KA" alt="">
+          <h2 class="heading-lg">Ingredientes Frescos</h2>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit neque, sint assumenda tenetur facere. Voluptatum unde necessitatibus.</p>
+        </div>
+      </div>
+    </section>
+    <section class="content-section" id="menu">
+      <div>
+        <nav>
+          <ul class="asimetric-bubles">
+            <li>
+              <a href="#pasta">Pastas</a>
+            </li>
+            <li>
+              <a href="#pizza">Pizzas</a>
+            </li>
+            <li>
+              <a href="#dessert">Postres</a>
+            </li>
+          </ul>
+        </nav>
+        <section class="menu-group" id="pasta">
+          <h2>Pasta</h2>
+          <div class="menu-offer">oferta</div>
+          <div class="menu-list">
+            <div class="menu-item">
+              <img src="" alt="">
+              <div>
+                <h3>Pasta 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore explicabo minima excepturi molestias.</p>
+                <p>Precio</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="menu-group" id="pizza"></section>
+        <section class="menu-group" id="dessert"></section>
+      </div>
+    </section>
+    <section class="content-section" id="find-us">
+      <div>
+        <div>
+          <h2>Encuéntranos en:</h2>
+          <p>Zona Oscura, Av.Perdida km. 12, Calle Imaginaria 201</p>
+        </div>
+        <div>
+          <h2>Horarios de atención</h2>
+          <ul>
+            <li>Lunes a Viernes de 17:00 a 00:00</li>
+            <li>Sábado y Domingo de 12:00 - 00:00</li>
+          </ul>
+        </div>
+      </div>
+      <div>Mapa</div>
+    </section>
+    <section class="content-section" id="contact">
+      <h2>Contáctenos</h2>
+      <section>
+        <h3>Central</h3>
+        <p>Zona Oscura, Av.Perdida km. 12, Calle Imaginaria 201</p>
+        <a href="">+591 12345678</a>
+        <a href="">thePizzeria@ejemplo.com</a>
+      </section>
+      <section>
+        <h3>Formulario de contacto</h3>
+        <p>¿Necesitas nuestros servicios para algún evento?, ¿Quisieras trabajar con nosotros?, ¿Tienes alguna duda?. No dudes en hablarnos para cualquier asunto!</p>
+        <form action="post">
+          <label for="name">Nombre</label>
+          <input type="text" name="name" id="name" placeholder="ej. Maria Jose" required>
+          <label for="phone">Numero de Teléfono</label>
+          <input type="text" name="phone" id="phone" placeholder="ej. 12345678">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" name="email" id="email" placeholder="ej. ejemplo@email.com">
+          <label for="subject">Asunto</label>
+          <input type="text" name="subject" id="subject" required>
+          <label for="message">Descripción del asunto</label>
+          <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <h3>The Pizzeria</h3>
+  </footer>
+</body>
+</html>

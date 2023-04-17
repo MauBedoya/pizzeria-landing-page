@@ -1,0 +1,7 @@
+@use "../settings";
+
+.paragraph {
+  font-size: 16px;
+  color: var(--paragraph-color);
+  line-height: 20px;
+}

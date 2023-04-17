@@ -1,0 +1,29 @@
+@use "../settings";
+
+.hero {
+  position: relative;
+  top: -141px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  place-content: center;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  background-color: tomato;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  background: 
+    url(https://res.cloudinary.com/dmpiwivwa/image/upload/v1681681010/pizzeria-landing-page-images/images/hero-bg_dh3xhf.webp),
+    // url(https://source.unsplash.com/cMHzDQ8ZPMM),
+    linear-gradient(45deg, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6));
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0 0 15% 15%;
+}
