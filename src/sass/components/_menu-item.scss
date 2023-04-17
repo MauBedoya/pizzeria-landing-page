@@ -1,0 +1,25 @@
+@use "../settings";
+@use "../tools";
+
+.menu-item {
+  display: flex;
+  gap: 10px;
+  min-height: 130px;
+}
+.menu-item img {
+  border-radius: 10px;
+  aspect-ratio: 2/1;
+  width: 35%;
+  // height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.menu-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.menu-item footer {
+  align-self: center;
+}

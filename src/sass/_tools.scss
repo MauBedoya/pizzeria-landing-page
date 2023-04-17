@@ -7,3 +7,14 @@
   backdrop-filter: blur(7.6px);
   -webkit-backdrop-filter: blur(7.6px);
 }
+
+@mixin background ($url) {
+  background: 
+    url($url),
+    // url(https://source.unsplash.com/cMHzDQ8ZPMM),
+    linear-gradient(45deg, rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6));
+  background-size: cover;
+  background-blend-mode: darken;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -1,6 +1,7 @@
 //* Átomos
 @use "components/heading";
 @use "components/paragraph";
+@use "components/font-color";
 
 //* moléculas
 @use "components/icons-pack";
@@ -10,3 +11,5 @@
 @use "components/nav";
 @use "components/hero";
 @use "components/bubble-card";
+@use "components/menu-item";
+@use "components/map-card";

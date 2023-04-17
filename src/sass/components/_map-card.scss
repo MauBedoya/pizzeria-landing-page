@@ -1,0 +1,16 @@
+.map-card {
+  display: flex;
+  gap: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
