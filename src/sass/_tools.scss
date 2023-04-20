@@ -18,3 +18,9 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@mixin desktop {
+  @media screen and (min-width: settings.$breakpoint-large) {
+    @content;
+  }
+}

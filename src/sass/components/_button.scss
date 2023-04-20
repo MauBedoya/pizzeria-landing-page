@@ -1,4 +1,5 @@
 @use "../settings";
+@use "../tools";
 
 .button {
   display: flex;
@@ -43,4 +44,20 @@
   &:hover {
     letter-spacing: 3px;
   }
+}
+
+.button-hamburger {
+  display: grid;
+  place-content: center;
+  height: 45px;
+  width: 45px;
+  transform: scale(0.7);
+
+  @include tools.desktop {
+    display: none;
+  }
+}
+
+.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+  background-color: var(--main-color);
 }

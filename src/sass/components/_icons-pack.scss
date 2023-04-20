@@ -1,5 +1,17 @@
+@use "../tools";
+
 .icons-pack {
+  display: none;
+
+  @include tools.desktop {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.icons-pack-hamburger {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  justify-content: space-between;
 }

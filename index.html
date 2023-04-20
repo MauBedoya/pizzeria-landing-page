@@ -14,32 +14,48 @@
 </head>
 <body>
   <div class="hero-background">
-    <!-- ToDo: revisar como usar el background de manera optima para desktop y mobile-->
   </div>
   <header class="main-header">
     <div class="header-top">
-      <div class="icons-pack">
+      <div class="head-element icons-pack">
         <a href=""><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1681644364/pizzeria-landing-page-images/icons/main-clr-fb-icon_nhajnh.svg" alt=""></a>
         <a href=""><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1681644593/pizzeria-landing-page-images/icons/main-clr-ig-icon_pkaufp.svg" alt=""></a>
         <a href=""><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1681644593/pizzeria-landing-page-images/icons/main-clr-mail-icon_isg0t1.svg" alt=""></a>
       </div>
-      <div>
+      <div class="head-element">
         <h1 class="heading-main fc-main">The Pizzeria</h1>
       </div>
-      <div>
+      <div class="head-element">
         <a href="" class="button button-transparent">
           <span>Ordena Ahora!!</span>
           <span class="icon"></span>
         </a>
       </div>
+      <button class="hamburger hamburger--spin button-hamburger" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
     </div>
-    <!-- <button class="hamburger hamburger--spin" type="button">
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button> -->
+    <!-- todo: agregar "active-menu" para desplegar el menu-->
+    <nav class="nav-menu">
+      <ul class="nav-list">
+        <li>
+          <div class="head-element icons-pack-hamburger">
+            <a href=""><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1681644364/pizzeria-landing-page-images/icons/main-clr-fb-icon_nhajnh.svg" alt=""></a>
+            <a href=""><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1681644593/pizzeria-landing-page-images/icons/main-clr-ig-icon_pkaufp.svg" alt=""></a>
+            <a href=""><img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1681644593/pizzeria-landing-page-images/icons/main-clr-mail-icon_isg0t1.svg" alt=""></a>
+          </div>
+        </li>
+        <li><a class="nav-item" href="#start">Inicio</a></li>
+        <li><a class="nav-item" href="#about-us">Nosotros</a></li>
+        <li><a class="nav-item" href="#menu">Menu</a></li>
+        <li><a class="nav-item" href="#find-us">Encuéntranos</a></li>
+        <li><a class="nav-item" href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav class="nav-sticky">
+  <nav class="nav-sticky active">
     <ul class="nav-list">
       <li><a class="nav-item" href="#start">Inicio</a></li>
       <li><a class="nav-item" href="#about-us">Nosotros</a></li>
@@ -53,12 +69,11 @@
       <h1 class="heading-xxl">El Autentico Sabor a Pizza</h1>
       <p class="heading-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, exercitationem ad itaque pariatur. dolor sit amet consectetur adipisicing elit.</p>
       <a class="button button-emphasis" href="">Haz tu pedido!</a>
-      <!-- <svg class="foot-shape" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" ><path  d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill" fill="#F35858" fill-opacity="1"></path></svg> -->
     </section>
-    <div class="asymmetric-bubble">
+    <!-- <div class="asymmetric-bubble">
       <img src="https://res.cloudinary.com/dmpiwivwa/image/upload/v1681674475/pizzeria-landing-page-images/images/floating-pizza_br1kvo.webp" alt="a pizza image">
-    </div>
-    <section class="content-section" id="about-us">
+    </div> -->
+    <!-- <section class="content-section" id="about-us">
       <div class="column-content bubble-cards-layout">
         <div class="bubble-card asymmetric-card">
           <img src="https://source.unsplash.com/QbOvrpDU1KA" alt="">
@@ -76,13 +91,13 @@
           <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit neque, sint assumenda tenetur facere. Voluptatum unde necessitatibus.</p>
         </div>
       </div>
-    </section>
-    <section class="content-section menu-section" id="menu">
+    </section> -->
+    <!-- <section class="content-section menu-section" id="menu">
       <div class="column-content">
         <header>
           <h2 class="heading-5xl">Menu</h2>
         </header>
-        <!-- <nav>
+        <nav>
           <ul class="bubble-cards-layout">
             <li>
               <div class="bubble-card asymmetric-card">
@@ -103,7 +118,7 @@
               </d>
             </li>
           </ul>
-        </nav> -->
+        </nav>
         <section class="menu-group" id="pastas">
           <h2 class="heading-3xl fc-emphasis">Pastas</h2>
           <div class="menu-list">
@@ -224,8 +239,8 @@
           </div>
         </section>
       </div>
-    </section>
-    <section class="content-section column-content" id="find-us">
+    </section> -->
+    <!-- <section class="content-section column-content" id="find-us">
       <h2 class="heading-5xl fc-emphasis">Encuéntranos</h2>
       <div class="map-card">
         <div class="card-content">
@@ -243,8 +258,8 @@
         </div>
         <div class="card-map" id="map">Mapa</div>
       </div>
-    </section>
-    <section class="content-section form-section" id="contact">
+    </section> -->
+    <!-- <section class="content-section form-section" id="contact">
       <div class="column-content">
         <h2 class="heading-5xl">Contáctanos</h2>
         <div class="contact-card">
@@ -282,10 +297,10 @@
           </section>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
-  <footer>
-    <h3>The Pizzeria</h3>
-  </footer>
+  <!-- <footer class="page-footer">
+    <h3 class="heading-main paragraph-sm">The Pizzeria</h3>
+  </footer> -->
 </body>
 </html>
