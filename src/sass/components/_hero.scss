@@ -3,12 +3,28 @@
 
 .hero {
   position: relative;
-  top: -141px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  min-height: auto;
+  height: calc(100vh - 80px);
+  gap: 25px;
   align-items: center;
-  place-content: center;
+  place-items: center;
+
+  @include tools.desktop {
+    justify-content: flex-start;
+  }
+}
+
+.hero .title {
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+
+  @include tools.desktop {
+    font-size: 80px;
+  }
 }
 
 .hero-background {
@@ -17,7 +33,10 @@
   height: 100vh;
   width: 100%;
   z-index: -1;
-  border-radius: 0 0 15% 15%;
+
+  @include tools.desktop {
+    border-radius: 0 0 15% 15%;
+  }
 
   @include tools.background("https://res.cloudinary.com/dmpiwivwa/image/upload/v1681681010/pizzeria-landing-page-images/images/hero-bg_dh3xhf.webp");
 }

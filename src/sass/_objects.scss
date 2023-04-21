@@ -28,6 +28,8 @@
 
 
   @include tools.desktop {
+    background: none;
+    box-shadow: none;
     backdrop-filter: unset;
   }
 }
@@ -75,18 +77,30 @@
   & img {
     display: block;
     position: absolute;
-    bottom: -45px;
-    width: 350px;
-    height: 350px;
+    bottom: -130px;
+    min-width: 50px;
+    width: 50%;
+    height: auto;
+
+    @include tools.desktop {
+      width: 350px;
+      height: 350px;
+    }
   }
 }
 
 .bubble-cards-layout {
   display: grid;
+  grid-auto-rows: auto;
   height: 100%;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 50px;
   place-content: normal;
+  padding: 60px 0;
+  
+  @include tools.desktop {
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .menu-section {

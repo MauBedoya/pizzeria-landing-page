@@ -4,7 +4,7 @@ const $navMenu = d.getElementById("mobile-nav");
 
 export default function showMenu() {
   d.addEventListener("click", (e) => {
-    if (e.target.matches(".hamburger, .hamburger *")  || e.target.matches(".nav-item") ){
+    if (e.target.matches(".hamburger, .hamburger *")  || e.target.matches(".mobile-nav .nav-item") ){
       $hamburgerBtn.classList.toggle("is-active");
       $navMenu.classList.toggle("active-menu");
     } else {
