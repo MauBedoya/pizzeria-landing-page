@@ -2,21 +2,27 @@
 @use "../tools";
 
 .nav-menu {
-  display: none;
+  position: absolute;
+  right: 0;
+  top: 65px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 40px;
   z-index: 10;
+  clip-path: polygon(50% 0, 100% 0, 100% 0, 50% 0);
+  transition: all 0.2s ease-in;
+
   
   &.active-menu {
-    font-size: 16px;
     display: block;
-    position: absolute;
-    right: 0;
-    top: 65px;
-    padding: 15px 30px;
     backdrop-filter: blur(80px);
-    @include tools.glassmorphism;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+    @include tools.glassmorphism-lg;
   }
 
   @include tools.desktop {
+    display: none;
     padding: 0;
     position: sticky;
     top: 0;
@@ -30,13 +36,14 @@
   
   @include tools.desktop {
     display: block;
+    clip-path: none;
   }
 }
 
 .nav-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   width: 100%;
   
   @include tools.desktop {
@@ -71,8 +78,8 @@
     }
   }
 
-  //ToDo: Agregar clase active con el intersection observer
-  &.active {
+  //ToDo: Agregar clase "on-item" con el intersection observer
+  &.on-item {
     &::after {
       transform: translateX(0);
     }

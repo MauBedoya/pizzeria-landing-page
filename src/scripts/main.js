@@ -1,1 +1,3 @@
-// import initMap from "./utils/googleMap";
+import showMenu from "./utils/hamburger_menu.js"
+
+showMenu();
