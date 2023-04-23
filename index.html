@@ -37,7 +37,6 @@
         </span>
       </button>
     </div>
-    <!-- todo: agregar "active-menu" para desplegar el menu-->
     <nav class="nav-menu" id="mobile-nav">
       <ul class="nav-list">
         <li>
@@ -65,7 +64,7 @@
     </ul>
   </nav>
   <main>
-    <section class="content-section hero" >
+    <section class="content-section hero" data-fade-element id="fade-1">
       <h1 class="title">El Autentico Sabor a Pizza</h1>
       <p class="heading-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, exercitationem ad itaque pariatur. dolor sit amet consectetur adipisicing elit.</p>
       <a class="button button-emphasis" href="">Haz tu pedido!</a>
@@ -75,29 +74,29 @@
     </div>
     <section class="content-section" id="about-us">
       <div class="column-content bubble-cards-layout">
-        <div class="bubble-card asymmetric-card">
+        <div class="bubble-card asymmetric-card" data-fade-element id="fade-3">
           <img src="https://source.unsplash.com/QbOvrpDU1KA" alt="">
           <h2 class="heading-3xl fc-emphasis">Ingredientes Frescos</h2>
           <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit neque, sint assumenda tenetur facere. Voluptatum unde necessitatibus.</p>
         </div>
-        <div class="bubble-card asymmetric-card">
+        <div class="bubble-card asymmetric-card" data-fade-element id="fade-4">
           <img src="https://source.unsplash.com/QbOvrpDU1KA" alt="">
           <h2 class="heading-3xl fc-emphasis">Ingredientes Frescos</h2>
           <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit neque, sint assumenda tenetur facere. Voluptatum unde necessitatibus.</p>
         </div>
-        <div class="bubble-card asymmetric-card">
+        <div class="bubble-card asymmetric-card" data-fade-element id="fade-5">
           <img src="https://source.unsplash.com/QbOvrpDU1KA" alt="">
           <h2 class="heading-3xl fc-emphasis fc-emphasis">Ingredientes Frescos</h2>
           <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore odit neque, sint assumenda tenetur facere. Voluptatum unde necessitatibus.</p>
         </div>
       </div>
     </section>
-    <!-- <section class="content-section menu-section" id="menu">
+    <section class="content-section menu-section" id="menu">
       <div class="column-content">
         <header>
           <h2 class="heading-5xl">Menu</h2>
         </header>
-        <nav>
+        <!-- <nav>
           <ul class="bubble-cards-layout">
             <li>
               <div class="bubble-card asymmetric-card">
@@ -118,8 +117,8 @@
               </d>
             </li>
           </ul>
-        </nav>
-        <section class="menu-group" id="pastas">
+        </nav> -->
+        <section class="menu-group" data-fade-element id="fade-6">
           <h2 class="heading-3xl fc-emphasis">Pastas</h2>
           <div class="menu-list">
             <div class="menu-item">
@@ -156,7 +155,7 @@
             </div>
           </div>
         </section>
-        <section class="menu-group" id="pizzas">
+        <section class="menu-group" data-fade-element id="fade-7">
           <h2 class="heading-3xl fc-emphasis">Pizzas</h2>
           <div class="menu-list">
             <div class="menu-item">
@@ -201,7 +200,7 @@
             </div>
           </div>
         </section>
-        <section class="menu-group" id="drinks">
+        <section class="menu-group" data-fade-element id="fade-8">
           <h2 class="heading-3xl fc-emphasis">Bebidas</h2>
           <div class="menu-list">
             <div class="menu-item">
@@ -239,10 +238,10 @@
           </div>
         </section>
       </div>
-    </section> -->
-    <!-- <section class="content-section column-content" id="find-us">
+    </section>
+    <section class="content-section column-content" id="find-us">
       <h2 class="heading-5xl fc-emphasis">Encuéntranos</h2>
-      <div class="map-card">
+      <div class="map-card" data-fade-element id="fade-9">
         <div class="card-content">
           <div class="card-text">
             <h2 class="heading-3xl fc-emphasis">Sucursal:</h2>
@@ -256,10 +255,12 @@
             </ul>
           </div>
         </div>
-        <div class="card-map" id="map">Mapa</div>
+        <div class="card-map" id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7186.7212723662105!2d-66.14203588900325!3d-17.41020365730417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sbo!4v1682255226527!5m2!1ses!2sbo" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
       </div>
-    </section> -->
-    <!-- <section class="content-section form-section" id="contact">
+    </section>
+    <section class="content-section form-section" id="contact">
       <div class="column-content">
         <h2 class="heading-5xl">Contáctanos</h2>
         <div class="contact-card">
@@ -297,10 +298,10 @@
           </section>
         </div>
       </div>
-    </section> -->
+    </section>
   </main>
-  <!-- <footer class="page-footer">
+  <footer class="page-footer">
     <h3 class="heading-main paragraph-sm">The Pizzeria</h3>
-  </footer> -->
+  </footer>
 </body>
 </html>

@@ -11,6 +11,16 @@
   align-items: center;
   place-items: center;
 
+  //faded
+  opacity: 0;
+  transform: translateY(-150px);
+  transition: all 0.8s ease-out;
+
+  //todo: move to trumps?
+  &.show-fade {
+    @include tools.show-fade;
+  }
+
   @include tools.desktop {
     justify-content: flex-start;
   }

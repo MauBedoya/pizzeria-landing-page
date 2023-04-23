@@ -4,7 +4,12 @@
 
 .contact-card {
   display: flex;
+  flex-direction: column;
   max-width: 900px;
+
+  @include tools.desktop {
+    flex-direction: row;
+  }
 }
 
 .card-aside {
