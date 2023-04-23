@@ -64,3 +64,37 @@
 .hamburger.is-active .hamburger-inner::after, .hamburger.is-active .hamburger-inner {
   background-color: var(--main-color);
 }
+
+.whatsapp-btn {
+  position: fixed;
+  right: 5vw;
+  bottom: 5vh;
+  display: grid;
+  place-content: center;
+  aspect-ratio: 1/1;
+  padding: 15px;
+  border-radius: 50%;
+  background: radial-gradient(
+    white 25px, rgba(37, 211, 101, 0.5)
+  );
+
+  @include tools.desktop {
+    display: none;
+  }
+
+  // solo se activa con un min-width: 992px verificado con JavaScript
+  &.desktop-btn {
+    display: block;
+    padding: 0;
+    top: 8px;
+    right: 70px;
+    bottom: auto;
+    border-radius: unset;
+    background: none;
+    z-index: 11;
+  }
+
+  & img {
+    width: 45px;
+  }
+}

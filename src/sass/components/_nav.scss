@@ -38,6 +38,10 @@
     display: block;
     clip-path: none;
   }
+
+  &.desktop-menu {
+    @include tools.glassmorphism;
+  }
 }
 
 .nav-list {
@@ -73,13 +77,6 @@
   }
 
   &:hover {
-    &::after {
-      transform: translateX(0);
-    }
-  }
-
-  //ToDo: Agregar clase "on-item" con el intersection observer
-  &.on-item {
     &::after {
       transform: translateX(0);
     }
