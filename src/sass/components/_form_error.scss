@@ -1,0 +1,31 @@
+@use "../settings";
+
+.error-span {
+  display: none;
+  width: 97%;
+  font-size: 13px;
+  margin: -10px auto 10px;
+  padding: 0 10px 5px;
+  background: var(--emphasis-color);
+  border-radius: 0 0 10px 10px;
+}
+
+.error-span.no-required {
+  background: green;
+}
+
+.error-span.active-error {
+  display: block;
+  animation: show-error 1s 1 normal 0s ease-out both;
+}
+
+@keyframes show-error {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}

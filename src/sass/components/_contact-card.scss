@@ -8,6 +8,7 @@
   max-width: 900px;
 
   @include tools.desktop {
+    min-height: 800px;
     flex-direction: row;
   }
 }
@@ -27,6 +28,7 @@
 .card-form {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   gap: 10px;
   max-width: 600px;
   padding: 20px;
@@ -65,7 +67,8 @@
   }
 }
 
-.card-form form button {
+.card-form form input[type=submit] {
+  width: 50%;
   align-self: center;
   border: none;
   border-radius: 10px;
