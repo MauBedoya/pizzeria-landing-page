@@ -36,11 +36,15 @@ export default function contactFormValidation() {
     }
   })
 
-  d.addEventListener("submit", () => {
+  d.addEventListener("submit", (e) => {
     const $form = d.querySelector(".contact-form");
-
-    setTimeout(() => {
+    const $errors = d.querySelectorAll("span.active-error")
+    
+    if ($errors.length > 0) {
+      e.preventDefault();
+    } else {
+      $form.submit();
       $form.reset();
-    }, 1000);
+    }
   })
 }
