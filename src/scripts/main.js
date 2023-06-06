@@ -9,7 +9,7 @@ showMenu();
 // scroll effects
 scrollEffect("data-fade-element");
 
-// desktop nav effects breakpoint in px: 992
+// desktop nav effects breakpoint at px: 992
 desktopNav("992");
 
 // form validation
